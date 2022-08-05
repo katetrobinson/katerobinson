@@ -428,7 +428,9 @@ a{
     transform: rotate(0deg);
 }
 
-
+@media(max-width: 450px){
+    .purple::before{background-color: rgba(232,142,237,0)}
+}
 
 /******************* FOOTER *******************/
 footer{

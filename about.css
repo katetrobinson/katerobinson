@@ -264,6 +264,7 @@ a{
     width: 85%;
     margin: auto;
 }
+
 .h1{
     font-size: 2rem;
     color: #FF8552;
@@ -273,6 +274,11 @@ a{
     padding-top: 5px;
     padding-bottom: 20px;
     color: #707070;
+}
+
+.subhero li img{
+    display: block;
+    margin: auto;
 }
 
 @media(max-width: 900px){
