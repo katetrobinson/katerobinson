@@ -1,0 +1,631 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+
+
+/******************* NAV BAR HEADER *******************/
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    position: relative;
+    font-family: 'Poppins', arial;
+    color: #707070;
+    overflow-x: hidden;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 9999;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    color: #707070;
+    text-decoration: none;
+}
+img{
+    width: 100%;
+    height: auto;
+    margin-top: -22rem;
+    margin-bottom: 8rem;
+    margin-left: 1rem;
+    border-radius: 1rem;
+}
+
+
+.container{
+    width: 900px;
+    margin: auto;
+}
+
+.subcontainer{
+    width: 85%;
+    margin: auto;
+}
+
+.navheader{
+    width: 100%;
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 100%;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+#submenu{
+    box-shadow: 0 5px 10px rgba(0,0,0,.1)
+}
+
+.navlogo{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.nav-link:hover, .nav-linkwork:hover {
+    font-weight: 600;
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+    color: #707070;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    transition: all 0.3s ease;
+    background-color:#707070;
+}
+
+@media(max-width: 900px){
+    .container{
+        width: 100%;
+    }
+}
+
+@media(max-width: 900px){
+    .hamburger{
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .navbar{
+        text-align: center;  
+    }
+    #submenu{ 
+        text-align: center;
+    }
+
+}
+
+
+/******************* NAV BAR HEADER *******************/
+*{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+body{
+    min-height: 100vh;
+}
+
+header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background: white;
+    padding: 20px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+header .logo{
+    font-weight: bold;
+    color: #707070;
+}
+
+header .navbar ul{
+    list-style: none;
+}
+
+header .navbar ul li{
+    position: relative;
+    float: left;
+}
+
+header .navbar ul li a{
+    font-size: 1rem;
+    padding: 20px;
+    color: #707070;
+    display: block;
+}
+
+header .navbar ul li a:hover{
+    font-weight: bold;
+}
+
+header .navbar ul li ul{
+    position: absolute;
+    left: 0;
+    width: 100px;
+    background: white;
+    display: none;
+}
+
+header .navbar ul li ul li{
+    width: 100%;
+}
+
+header .navbar ul li:hover > ul{
+    display: initial;
+}
+
+#menu-bar{
+    display: none;
+}
+
+header label{
+    font-size: 1rem;
+    color: #707070;
+    cursor: pointer;
+    display: none;
+}
+
+@media(max-width: 900px){
+    header{
+        padding: 20px;
+}
+
+    header label{
+        display: initial;
+    }
+
+    header .navbar{
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        background: white;
+        display: none;
+    }
+
+    header .navbar ul li{
+        width: 100%;
+    }
+
+    header .navbar ul li ul{
+        position: relative;
+        width: 100%;
+    }
+
+    header .navbar ul li ul li{
+        background: white;
+    }
+
+    header .navbar ul li ul li ul{
+        width: 100%;
+        left: 0;
+    }
+
+    #menu-bar:checked ~ .navbar{
+        display: initial;
+    }
+
+}
+
+/******************* BODY: PROJECT OVERVIEW *******************/
+a{
+    color: #707070;
+}
+
+.bodycontainer{
+    color: #707070;
+    margin-top: 200px;
+    height: 800px;
+    position: relative;
+    z-index: 500;
+    justify-content: space-between;
+}
+
+.bodysubcontainer{
+    margin: auto;
+    text-align: center;
+}
+
+.titlehighlight {position: relative;}
+.titlehighlight::before {
+    content: "";
+    background-color: rgba(86,135,109,.5);
+    position: absolute;
+    width: calc(100% + 4px);
+    height: 60%;
+    left: -2px;
+    bottom: 0;
+    z-index: -1;
+    transform: rotate(0deg);
+}
+
+.subtitle{
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #707070;
+    letter-spacing: .2em;
+    font-size: .9em;
+}
+
+.bodysubcontainer img{
+    width: 100%;
+    margin: auto;
+    position: relative;
+    padding: 100px 50px;
+    align-items: center;
+}
+
+.subcontainer h2{
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: .2em;
+    font-size: .9em;
+    padding-bottom: 10px;}
+
+.projectoverview{
+    color: #F9AA33;
+    padding: 10px;
+}
+
+.column1, .column2 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    }
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column1{
+    width: 65%;
+}
+
+.column2{
+    width: 35%;
+}
+
+.role{
+    padding-top: 20px;
+}
+
+@media(min-width: 900px){
+    .bodysubcontainer img{width: 800px;}
+    .bodysubcontainer{width: 800px}
+    .row{width: 800px; margin: auto;}
+    .subcontainer{width: 800px;}
+}
+
+/******************* BODY: UNDERSTANDING THE PROBLEM *******************/
+.greencont1{
+    position: relative;
+    background: #D4E1DA;
+    padding: 50px;
+}
+
+.problem2{
+    color: #707070;
+}
+
+.problem2 h2{
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: .2em;
+    font-size: .9em;
+    padding-bottom: 10px;
+}
+
+.problem2title{
+    color: #56876D;
+}
+
+.column3, .column4 {
+    float: left;
+    width: 50%;
+    padding: 20px 20px 0 0;
+    }
+
+.row2:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.startusers{
+    padding: 50px;
+}
+
+.startusers img{
+    display: block;
+    width: 85%;
+    margin: auto;
+    position: relative;
+    padding: 20px;
+    align-items: center;
+}
+
+.startusers h2{
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: .2em;
+    font-size: .9em;
+    padding: 20px 0 10px 0;
+}
+
+.startusers ol li{
+    padding: 10px 40px;
+}
+
+@media(min-width: 900px){
+    .startusers img{width: 800px;}
+    .problem2{width: 800px; margin: auto;}
+}
+
+/******************* BODY: STARTING THE DESIGN *******************/
+.design3{
+    position: relative;
+    background: #D4E1DA;
+    padding: 50px;
+}
+
+.design3 h2{
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: .2em;
+    font-size: .9em;
+    padding: 20px 0 10px 0;
+}
+
+.startdesign3{
+    color: #56876D;
+}
+
+.design3 ol li{
+    padding: 10px 40px;
+}
+
+.wireframing{
+    position: relative;
+    padding: 50px;
+}
+
+.wireframing h2{
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: .2em;
+    font-size: .9em;
+    padding: 20px 0 10px 0;
+}
+
+.wireframing p{
+    padding: 0 10px 10px 0;
+}
+
+.wireframing img{
+    display: block;
+    width: 100%;
+    margin: auto;
+    position: relative;
+    padding: 20px 0;
+}
+
+.columnw1, .columnw2 {
+    float: left;
+    width: 50%;
+    padding: 20px;
+    }
+
+.rowwireframe:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.rowwireframe2 {
+    display: none;
+}
+
+@media(min-width: 900px){
+    .rowwireframe{display: none;}
+    .rowwireframe2{
+        display: block;
+        width: 650px;
+        margin: auto;
+        position: relative;
+        padding: 20px;
+        align-items: center;}
+    .startusers{width: 900px; margin: auto;}
+    .design3cont{width: 800px; margin: auto;}
+    .wireframing{width: 900px; margin: auto;}
+
+}
+
+/******************* BODY: REFINING THE DESIGN *******************/
+.design4{
+    position: relative;
+    background: #D4E1DA;
+    padding: 50px;
+}
+
+.design4 h2{
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: .2em;
+    font-size: .9em;
+    padding: 20px 0 10px 0;
+}
+
+.refinedesign4{
+    color: #56876D;
+}
+
+.mockups{
+    position: relative;
+    padding: 50px;
+}
+
+.usa1, .usa2, .finalprototype{
+    display: block;
+    width: 85%;
+    margin: auto;
+    position: relative;
+    padding: 20px;
+    align-items: center;
+}
+
+@media(min-width: 900px){
+    .finalprototype{width: 800px;}
+    .design4cont{width: 800px; margin: auto;}
+    .mockups{width: 900px; margin: auto;}
+    .colmock1 {
+        float: left;
+        width: 47%;
+        padding: 10px;
+        }
+    .colmock2 {
+        float: left;
+        width: 50%;
+        padding: 10px;
+        }
+    .rowmock:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+.mockups h2{
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: .2em;
+    font-size: .9em;
+    padding:20px 0;
+}
+
+/******************* BODY: NEXT STEPS *******************/
+.nextsteps5{
+    position: relative;
+    background: #D4E1DA;
+    padding: 30px;
+}
+
+.nextsteps5 h2{
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: .2em;
+    font-size: .9em;
+    padding: 20px;
+    color: #56876D;
+}
+
+.finalcont h2{
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: .2em;
+    font-size: .9em;
+    padding: 20px;
+    text-align: center;
+}
+
+.nextsteps, .rowend img{
+    display: block;
+    width: 85%;
+    margin: auto;
+    position: relative;
+    padding: 20px 0;
+    align-items: center;
+}
+
+@media(min-width: 900px){
+    .nextsteps{width: 800px;}
+    .rowend img{width: 65%;}
+    .nextstepcont{width: 840px; margin: auto;}
+}
+
+.columnend{
+    float: left;
+    width: 50%;
+    padding: 20px;
+    }
+
+.rowend:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/******************* FOOTER *******************/
+.footer{
+    padding: 50px 0;
+    background-color: #F3C6F6;
+}
+
+.footer .connect{
+    margin-top: 0;
+    padding: 1rem;
+    text-align: center;
+    color: #333;
+}
+
+.footer .social{
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.footer .social img{
+    font-size: 24px;
+    color: inherit;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+    opacity: .75;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.footer .social img:hover{
+    opacity: 1;
+}
+
+
