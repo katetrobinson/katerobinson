@@ -328,7 +328,7 @@ a{
 
 @media(min-width: 900px){
     .bodysubcontainer img{width: 800px;}
-    .bodysubcontainer{width: 800px}
+    .bodysubcontainer{width: 800px;}
     .row{width: 800px; margin: auto;}
     .subcontainer{width: 800px;}
 }
@@ -396,6 +396,8 @@ a{
 @media(min-width: 900px){
     .startusers img{width: 800px;}
     .problem2{width: 800px; margin: auto;}
+    .painpoints{margin-top: 50px;}
+    .allof{margin-bottom: 50px;}
 }
 
 /******************* BODY: STARTING THE DESIGN *******************/
@@ -456,7 +458,7 @@ a{
 
 @media(min-width: 900px){
     .rowwireframe1{
-        width: 600px;
+        width: 500px;
         margin: auto;
         position: relative;
         padding: 20px;
