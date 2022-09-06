@@ -290,8 +290,8 @@ a{
     .pro2{width: 765px;}
     .pro3{width: 765px;}
     .therapyapp{width: 900px; display: block; margin-left: auto; margin-right: auto;}
-    .vetapp{width: 900px; display: block; margin-left: auto; margin-right: auto;}
-
+    .vetsite{width: 900px; display: block; margin-left: auto; margin-right: auto;}
+    .hotelsite{width: 900px; display: block; margin-left: auto; margin-right: auto;}
 }
 
 /* Project Titles and Descriptions*/
@@ -351,24 +351,19 @@ a{
 
 /* Portfolio Images */
 
-.therapyapp{
+.therapyapp .vetsite .hotelsite{
     position: relative;
     align-items: center;
-}
-
-.vetapp{
-    align-items: center;
-    position: relative;
 }
 
 .comingsoon{
     padding: 5rem;
-    margin-top: 5rem;
     font-family: 'Courier New', Courier, monospace;
     font-size: 2rem;
     align-items: center;    
     position: relative;
-
+    justify-content: center;
+    display: flex;
 }
 
 
