@@ -336,12 +336,12 @@ a{
 /******************* BODY: UNDERSTANDING THE PROBLEM *******************/
 .greencont1{
     position: relative;
-    background: #D4E1DA;
-    padding: 50px;
 }
 
 .problem2{
-    color: #707070;
+    position: relative;
+    background: #D4E1DA;
+    padding: 50px;
 }
 
 .problem2 h2{
