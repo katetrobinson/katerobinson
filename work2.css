@@ -448,21 +448,7 @@ a{
     padding: 20px 0;
 }
 
-.rowwireframe1{
-    display: block;
-    position: relative;
-    align-items: center;
-    margin: auto;
-    width: 75%;
-}
-
 @media(min-width: 900px){
-    .rowwireframe1{
-        width: 500px;
-        margin: auto;
-        position: relative;
-        padding: 20px;
-        align-items: center;}
     .startusers{width: 900px; margin: auto;}
     .design3cont{width: 800px; margin: auto;}
     .wireframing{width: 900px; margin: auto;}
