@@ -423,6 +423,10 @@ a{
     padding: 10px 40px;
 }
 
+.mockups ol li{
+    padding: 10px 40px;
+}
+
 .wireframing{
     position: relative;
     padding: 50px;
@@ -455,7 +459,7 @@ a{
 }
 
 /******************* BODY: REFINING THE DESIGN *******************/
-.design4{
+.design4, .nextsteps5{
     position: relative;
     background: #FFF3D0;
     padding: 50px;
@@ -478,9 +482,9 @@ a{
     padding: 50px;
 }
 
-.usa1, .usa2, .finalprototype{
+.usa1, .usa2, .finalprototype, .internalfeedback{
     display: block;
-    width: 85%;
+    width: 100%;
     margin: auto;
     position: relative;
     padding: 20px;
@@ -489,6 +493,7 @@ a{
 
 @media(min-width: 900px){
     .finalprototype{width: 800px;}
+    .internalfeedback{width: 800px;}
     .design4cont{width: 800px; margin: auto;}
     .mockups{width: 900px; margin: auto;}
     .colmock1 {
@@ -531,6 +536,10 @@ a{
     font-size: .9em;
     padding: 20px;
     color: #FFD046;
+}
+
+.nextsteps5 p{
+    padding: 0 20px ;
 }
 
 .finalcont h2{
